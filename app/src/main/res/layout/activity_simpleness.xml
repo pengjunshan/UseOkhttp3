@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".activitys.SimplenessActivity">
+
+
+
+  <android.support.v7.widget.AppCompatButton
+    android:id="@+id/getRequet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Get请求"
+    android:onClick="GetRequet"
+    android:layout_marginTop="20dp"
+    app:layout_constraintTop_toTopOf="parent"
+    android:textColor="#000"
+    android:textSize="16sp"
+    android:textAllCaps="false"
+    />
+
+  <android.support.v7.widget.AppCompatButton
+    android:id="@+id/postKeyValueRequest"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Post_KeyValue请求"
+    android:onClick="PostKeyValueRequet"
+    android:layout_marginTop="20dp"
+    android:textColor="#000"
+    android:textSize="16sp"
+    app:layout_constraintTop_toBottomOf="@+id/getRequet"
+    android:textAllCaps="false"
+    />
+
+  <android.support.v7.widget.AppCompatButton
+    android:id="@+id/postJsonRequest"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Post_Json请求"
+    android:onClick="PostJsonRequet"
+    android:layout_marginTop="20dp"
+    android:textColor="#000"
+    android:textSize="16sp"
+    app:layout_constraintTop_toBottomOf="@+id/postKeyValueRequest"
+    android:textAllCaps="false"
+    />
+
+
+  <android.support.v7.widget.AppCompatButton
+    android:id="@+id/postFileRequest"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Post_File请求"
+    android:onClick="PostFileRequet"
+    android:layout_marginTop="20dp"
+    android:textColor="#000"
+    android:textSize="16sp"
+    android:textAllCaps="false"
+    app:layout_constraintTop_toBottomOf="@+id/postJsonRequest"
+    />
+
+  <android.support.v7.widget.AppCompatButton
+    android:id="@+id/postImgRequest"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Post_Img请求"
+    android:onClick="PostImgRequet"
+    android:layout_marginTop="20dp"
+    android:textColor="#000"
+    android:textSize="16sp"
+    android:textAllCaps="false"
+    app:layout_constraintTop_toBottomOf="@+id/postFileRequest"
+    />
+
+
+  <android.support.v7.widget.AppCompatButton
+    android:id="@+id/getImgRequest"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Get_Img请求"
+    android:onClick="GetImgRequetSimpleness"
+    android:layout_marginTop="20dp"
+    android:textColor="#000"
+    android:textAllCaps="false"
+    android:textSize="16sp"
+    app:layout_constraintTop_toBottomOf="@+id/postImgRequest"
+    />
+
+  <android.support.v7.widget.AppCompatButton
+    android:id="@+id/postImgKeyValueRequest"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="图文混合上传"
+    android:onClick="PostImgKeyValueRequet"
+    android:layout_marginTop="20dp"
+    android:textColor="#000"
+    android:textSize="16sp"
+    app:layout_constraintTop_toBottomOf="@+id/getImgRequest"
+    />
+
+</android.support.constraint.ConstraintLayout>
